@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Privacy Policy — Shorts Bot</title>
+  <style>
+    :root { --bg:#0f1115; --card:#171a21; --text:#e8eaf0; --muted:#9aa0ae; --accent:#ff3b5c; --border:#262b36; }
+    * { box-sizing: border-box; }
+    html, body { margin:0; padding:0; background:var(--bg); color:var(--text); font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif; }
+    .wrap { max-width:780px; margin:0 auto; padding:48px 24px 80px; }
+    h1 { font-size:1.8rem; margin:0 0 8px; }
+    h2 { font-size:1.1rem; margin:28px 0 8px; }
+    .muted { color: var(--muted); margin: 0 0 24px; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .card { background:var(--card); border:1px solid var(--border); border-radius:10px; padding:22px 24px; }
+    nav { margin-top:28px; padding-top:20px; border-top:1px solid var(--border); color:var(--muted); }
+    nav a { margin-right:18px; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>Privacy Policy</h1>
+    <p class="muted">Last updated: April 21, 2026</p>
+
+    <div class="card">
+      <p>
+        Shorts Bot is a personal desktop application. It is installed and run by a single
+        operator (me) on my own computer. It is not a service, a website, or a product
+        offered to third parties.
+      </p>
+
+      <h2>What data the application collects</h2>
+      <p>
+        None from third parties. The application never asks for, accepts, or stores data
+        from anyone other than its single operator. Specifically:
+      </p>
+      <ul>
+        <li>No account sign-ups.</li>
+        <li>No analytics or telemetry sent to me or to any third party.</li>
+        <li>No visitor data is collected on this website. This site is a static set of HTML pages hosted on GitHub Pages.</li>
+      </ul>
+
+      <h2>What data the application stores locally</h2>
+      <ul>
+        <li>
+          <strong>My own content:</strong> generated scripts, voiceovers, and MP4s live in a folder on my computer.
+        </li>
+        <li>
+          <strong>OAuth tokens for my own accounts:</strong> YouTube and TikTok access/refresh tokens
+          are stored locally so the tool can upload on my behalf. These tokens belong to my own
+          accounts and are never transmitted anywhere except to Google's and TikTok's own APIs.
+        </li>
+      </ul>
+
+      <h2>Third-party APIs</h2>
+      <p>
+        When I click Upload, the application calls:
+      </p>
+      <ul>
+        <li><strong>YouTube Data API v3</strong> — to upload a video to my own channel.</li>
+        <li>
+          <strong>TikTok Content Posting API</strong> — to upload a video to my own account.
+          Required scopes: <code>user.info.basic</code>, <code>video.publish</code>, <code>video.upload</code>.
+        </li>
+      </ul>
+      <p>
+        Each provider's own privacy policy governs how they handle those requests on their side.
+      </p>
+
+      <h2>Data sharing</h2>
+      <p>
+        Nothing about this tool shares user data with anyone, because there are no users other
+        than me. I do not sell, rent, or otherwise disclose any information to third parties.
+      </p>
+
+      <h2>Changes</h2>
+      <p>
+        If this policy changes I'll update the "Last updated" date at the top of this page.
+      </p>
+
+      <h2>Contact</h2>
+      <p>
+        Questions? Reach me on <a href="https://github.com/ifollowtrend">GitHub</a>.
+      </p>
+    </div>
+
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="terms.html">Terms of Service</a>
+    </nav>
+  </div>
+</body>
+</html>
