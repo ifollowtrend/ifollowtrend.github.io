@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Shorts Bot — a personal short-form video tool</title>
+</head>
+<body>test</body></html><!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Shorts Bot — a personal short-form video tool</title>
+  <meta name="description" content="A personal desktop tool that helps me script, compose, and cross-post my own short-form videos to YouTube Shorts and TikTok." />
+  <style>
+    :root {
+      --bg: #0f1115;
+      --card: #171a21;
+      --text: #e8eaf0;
+      --muted: #9aa0ae;
+      --accent: #ff3b5c;
+      --border: #262b36;
+    }
+    * { box-sizing: border-box; }
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: var(--bg);
+      color: var(--text);
+      font: 16px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
+    .wrap { max-width: 780px; margin: 0 auto; padding: 48px 24px 80px; }
+    header { margin-bottom: 32px; }
+    h1 { font-size: 2rem; margin: 0 0 8px; letter-spacing: -0.01em; }
+    .tagline { color: var(--muted); font-size: 1.05rem; margin: 0; }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 22px 24px;
+      margin: 18px 0;
+    }
+    h2 { font-size: 1.15rem; margin: 0 0 10px; }
+    p { margin: 8px 0; }
+    ul { margin: 8px 0 8px 20px; padding: 0; }
+    li { margin: 4px 0; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    code {
+      background: #0b0d12;
+      padding: 1px 6px;
+      border-radius: 4px;
+      font-size: 0.9em;
+      color: #ffd2db;
+    }
+    nav { margin-top: 28px; padding-top: 20px; border-top: 1px solid var(--border); color: var(--muted); }
+    nav a { margin-right: 18px; }
+    footer { margin-top: 48px; color: var(--muted); font-size: 0.85rem; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>Shorts Bot</h1>
+      <p class="tagline">A personal desktop tool for scripting, composing, and cross-posting my own short-form videos.</p>
+    </header>
+
+    <div class="card">
+      <h2>What it does</h2>
+      <p>
+        Shorts Bot runs on my own computer. It generates a short script from a niche I pick,
+        synthesizes a voiceover, stamps captions onto a 1080×1920 MP4, and then — only when I
+        click <em>Upload</em> — pushes the finished file to my own YouTube and TikTok accounts.
+      </p>
+      <ul>
+        <li>Output: a single 1080×1920 vertical MP4 (max 60 seconds, YouTube Shorts / TikTok format).</li>
+        <li>Destinations: my own YouTube channel and my own TikTok account, only.</li>
+        <li>Every upload is user-initiated — there is no scheduled background posting unless I personally enable it on my own machine.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>TikTok integration</h2>
+      <p>
+        Shorts Bot integrates with TikTok via the official developer APIs so I don't have to
+        drag-and-drop files into the TikTok app every time I want to cross-post a Short.
+      </p>
+      <ul>
+        <li><strong>Login Kit</strong> (scope <code>user.info.basic</code>) — one-time OAuth so the tool can act on my TikTok account.</li>
+        <li><strong>Content Posting API</strong> (scope <code>video.publish</code>) — performs the FILE_UPLOAD publish flow: init → chunked PUT → status poll.</li>
+        <li><strong>Creator Info query</strong> (scope <code>video.upload</code>) — fetches my account's posting limits before each upload so the tool doesn't exceed the daily cap.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Who uses it</h2>
+      <p>
+        Me. There is no public service, no server, and no shared account. Shorts Bot is a
+        single-user desktop application I run locally. There are no third-party users and no
+        data collection beyond what I produce and upload myself.
+      </p>
+    </div>
+
+    <nav>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Service</a>
+      <a href="https://github.com/ifollowtrend">GitHub</a>
+    </nav>
+
+    <footer>
+      © 2026 ifollowtrend · Personal project.
+    </footer>
+  </div>
+</body>
+</html>
